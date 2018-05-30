@@ -24,8 +24,8 @@ public class TestDbServlet extends HttpServlet {
 		
 		try {
 			
-			/*Because we already setup this user in the mysql database, with the SQL script
-			we ran earlier, we can do this.  */
+			/*Because we already setup this user in the MySQL database, with the SQL script
+			we ran earlier, we can do this. */
 			
 			String userName= "springstudent";
 			
