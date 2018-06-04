@@ -19,7 +19,6 @@ public class CustomerDAOImpl implements CustomerDAO {
 	SessionFactory factory;
 
 	@Override
-	@Transactional
 	public List<Customer> getCustomers() {
 		
 		Session session= factory.getCurrentSession();
