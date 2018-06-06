@@ -29,5 +29,16 @@ public class CustomerController {
 		
 		return "list-customers";
 	}
+	
+	@GetMapping("/showFormForAdd")
+	public String showAddForm(Model theModel) {
+		
+		Customer theCustomer= new Customer();
+		
+		//I think customer is referring to something or some tag on the jsp form
+		theModel.addAttribute("customer", theCustomer);
+		
+		return "customer-form";
+	}
 
 }
